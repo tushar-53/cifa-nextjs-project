@@ -43,17 +43,17 @@ export default function Card({
       {/* Content Section */}
       <div className="px-4 h-[30%] flex flex-col justify-between">
         <div>
-          <h2 className="text-white font-medium text-xl">{name}</h2>
-          <p className="text-secondary_color mt-5 mb-3">{bakcground}</p>
+          <h2 className="text-white font-medium text-3xl leading-7">{name}</h2>
+          <p className="text-secondary_color mt-5 font-normal text-base leading-7 mb-3">{bakcground}</p>
           <div className="flex flex-wrap gap-3">
-            <Button title={professionOne} />
-            <Button title={professionTwo} />
+            <Button title={professionOne}  className="font-normal text-xs leading-4"/>
+            <Button title={professionTwo} className="font-normal text-xs leading-4"/>
             {professionThree && <Button title={professionThree} />}
           </div>
         </div>
         <div>
           <p className="text-white text-lg mt-3">+2 More</p>
-          <p className="flex items-center gap-1 text-white mt-4">
+          <p className="flex items-center gap-1 text-white mt-4 font-medium text-base leading-7">
             View Profile <OnlyRightArrowIcon className="w-5 text-white" />
           </p>
         </div>
