@@ -8,8 +8,7 @@ export default function EmployabilityTools() {
     <section className="lg:container mx-auto text-white py-32">
       <div className=" lg:flex justify-center">
       <div className="lg:w-1/2 relative mt-10 lg:mt-0">
-          {/* Full shadow overlay from left to right */}
-          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-l from-secondary_bg via-black to-transparent opacity-80 z-20"></div>
+          
           <Image
             src={exployee}
             width={800}
@@ -17,6 +16,8 @@ export default function EmployabilityTools() {
             alt="Online Exam Image"
             className="relative z-10 mx-auto "
           />
+          {/* Full shadow overlay from left to right */}
+          <div className="absolute inset-0 bg-gradient-to-l from-primary_bg via-primary_bg/10 to-transparent opacity-90 z-20"></div>
         </div>
 
         <div className="lg:w-1/2 px-10 text-center md:text-start">

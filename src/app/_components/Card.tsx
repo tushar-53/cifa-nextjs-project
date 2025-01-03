@@ -9,7 +9,7 @@ interface CardProps {
   bakcground: string;
   professionOne: string;
   professionTwo: string;
-  professionThree?: string; // Make this prop optional
+  professionThree?: string; 
 }
 
 export default function Card({
