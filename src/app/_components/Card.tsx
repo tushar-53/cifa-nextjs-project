@@ -21,22 +21,27 @@ export default function Card({
   professionThree,
 }: CardProps) {
   return (
-    <div className="w-[380px] h-[650px] border rounded-2xl relative"> {/* Increased height */}
+    <div className="w-[460px] h-[700px] border rounded-2xl relative"  style={{
+      borderRadius: "19px",
+      background:
+        "linear-gradient(0deg, #120C04 38.71%, rgba(18, 12, 4, 0.50) 56.8%, rgba(18, 12, 4, 0.00) 80.27%)",
+    }}>
+      {" "}
+      {/* Increased height */}
       {/* Image Container with Shadow */}
-      <div className="relative h-[50%] rounded-t-2xl overflow-hidden">
-        <Image
-          src={image}
-          alt={name}
-          layout="fill"
-          objectFit="cover"
-          className="rounded-t-2xl"
-        />
+      <div className="relative h-[60%] rounded-t-2xl overflow-hidden">
+        <Image src={image} alt={name} layout="fill" className="rounded-t-2xl" />
         {/* Shadow Overlay */}
-        <div className="absolute bottom-0 left-0 right-0 h-2/3 bg-gradient-to-t from-secondary_bg via-secondary_bg/10 to-transparent pointer-events-none"></div>
+        <div
+          className="absolute bottom-0 left-0 right-0 h-1/3 pointer-events-none"
+          style={{
+            background:
+              "linear-gradient(0deg, #120C04 38.71%, rgba(18, 12, 4, 0.50) 56.8%, rgba(18, 12, 4, 0.00) 100.27%)",
+          }}
+        ></div>
       </div>
-
       {/* Content Section */}
-      <div className="px-4 h-[40%] flex flex-col justify-between">
+      <div className="px-4 h-[30%] flex flex-col justify-between">
         <div>
           <h2 className="text-white font-medium text-xl">{name}</h2>
           <p className="text-secondary_color mt-5 mb-3">{bakcground}</p>
@@ -56,4 +61,3 @@ export default function Card({
     </div>
   );
 }
-

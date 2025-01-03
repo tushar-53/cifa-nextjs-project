@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root{
-    --primary_bg: #000000;
+    --primary_bg: #000;
     --secondary_bg: #1C140A;
     --primary_btn: rgba(193, 178, 125, 0.6);
     --main_bg: #000;
@@ -15,7 +15,7 @@
     --blur: rgba(255, 255, 255, 0.8);
     --text_color: #333;
     --primary_color: #1fa0ef;
-    --secondary_color: #848f95;
+    --secondary_color:rgba(255, 255, 255, 0.50);
     --title_color: #66717f;
     --black: #29313d;
     --white: #fff;
@@ -30,24 +30,29 @@
 }
 
 
-/* initial fonts */
 /* Aeonik Font */
 @font-face {
-    font-family: "Aeonik";
-    src: url("/src/assets/fonts/Aeonik-Regular.woff2") format("woff2"),
-         url("/src/assets/fonts/Aeonik-Regular.woff") format("woff");
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: "Aeonik Pro";
-    src: url("/src/assets/fonts/AeonikPro-Regular.woff2") format("woff2"),
-         url("/src/assets/fonts/AeonikPro-Regular.woff") format("woff");
-    font-weight: 400;
-    font-style: normal;
-  }
+  font-family: "Aeonik";
+  src: url("/src/assets/fonts/Aeonik-Regular.woff2") format("woff2"),
+       url("/src/assets/fonts/Aeonik-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
 
+/* Aeonik Pro Font */
+@font-face {
+  font-family: "Aeonik Pro";
+  src: url("/src/assets/fonts/AeonikPro-Regular.woff2") format("woff2"),
+       url("/src/assets/fonts/AeonikPro-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@layer base {
+  body {
+    font-family: "Aeonik", sans-serif; 
+  }
+}
 
 *{
     margin: 0;
@@ -58,3 +63,7 @@
     width: 1400px;
     margin: auto;
 }
+/* 
+.bg_area{
+  background: linear-gradient(268deg, rgba(193, 178, 125, 0.00) 48.41%, rgba(193, 178, 125, 0.50) 110.35%), linear-gradient(272deg, #000 45.4%, rgba(0, 0, 0, 0.00) 134.09%), url(<path-to-image>) lightgray 96.745px -425.676px / 47.293% 185.108% no-repeat, url(<path-to-image>) lightgray -0.274px -425.676px / 50.803% 185.108% no-repeat;
+} */

@@ -13,13 +13,13 @@ export default function Marque() {
         {/* Dot Icon */}
         <DotIcon className="w-5 text-primary_color mx-2" />
         {/* Marquee Text */}
-        <p className="text-primary_color text-4xl">
+        <p className="text-primary_color text-5xl font-medium leading-snug ">
           Inspiring Education Through Innovation
         </p>
         {/* Another Dot Icon */}
         <DotIcon className="w-5 text-primary_color mx-2" />
         {/* Marquee Text */}
-        <p className="text-primary_color text-4xl">
+        <p className="text-primary_color text-5xl font-medium leading-snug ">
           Inspiring Education Through Innovation
         </p>
       </Marquee>

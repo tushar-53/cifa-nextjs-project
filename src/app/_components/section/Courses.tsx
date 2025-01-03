@@ -41,19 +41,19 @@ export default function Courses() {
   const scrollNext = () => emblaApi && emblaApi.scrollNext();
 
   return (
-    <div className="bg-secondary_bg py-20 relative">
+    <div className=" relative">
       {/* Shadow Effect */}
       <div className="absolute top-0 left-1/2 transform -translate-x-1/2">
         <Image src={bgBlur} width={500} alt="bg blur" />
       </div>
 
-      <section className="lg:container mx-auto px-4 lg:px-0">
+      <section className="lg:container bg-secondary_bg py-20 mx-auto px-4 lg:px-0">
         {/* Header */}
         <div className="text-center">
-          <h2 className="text-4xl font-semibold text-white">
+          <h2 className="text-6xl font-medium leading-tight text-white">
             Explore a Wide Range of <br /> Accredited Courses!
           </h2>
-          <p className="text-secondary_color my-8 text-xl">
+          <p className="font-poppins text-secondary_color my-8 text-lg font-medium leading-7">
             Gain skills and certifications designed to accelerate your career in
             the <br /> finance industry.
           </p>

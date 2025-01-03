@@ -20,16 +20,16 @@ export default function BlogCard({image, title, date, relatedOne, relatedTwo}: B
         <Image src={image} width={380} height={300} alt='blog image'/>
         {/* title and date */}
         <div className='mt-5 flex justify-between'>
-            <h3 className='text-lg'>{title}</h3>
+            <h3 className='text-base font-medium leading-5'>{title}</h3>
             <div className='flex items-center gap-2'>
                 <WatchIcon className='w-5 text-secondary_color'/>
                 <p className='text-secondary_color'>{date}</p>
             </div>
         </div>
         {/* related to */}
-        <div className='flex gap-5 my-2'>
+        <div className='flex gap-5 my-2 font-normal text-sm leading-6'>
             Related To: <div className='flex gap-3'>
-            <Button title={relatedOne}/> <Button title={relatedTwo}/>
+            <Button title={relatedOne} className='font-normal text-xs leading-3 bg-[#C1B27D]'/> <Button title={relatedTwo}  className='font-normal text-xs leading-3 bg-[#C1B27D]'/>
             </div>
         </div>
         {/* read more button */}

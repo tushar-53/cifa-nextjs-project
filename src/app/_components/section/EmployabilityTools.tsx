@@ -5,8 +5,8 @@ import exployee from "../../../../public/home-page-img/employeementTool.png";
 
 export default function EmployabilityTools() {
   return (
-    <section className="lg:container mx-auto text-white py-32">
-      <div className=" lg:flex justify-center">
+    <section className=" mx-auto text-white py-32">
+      <div className=" lg:flex ">
       <div className="lg:w-1/2 relative mt-10 lg:mt-0">
           
           <Image

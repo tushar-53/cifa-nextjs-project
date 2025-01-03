@@ -11,10 +11,10 @@ export default function TrustedBy() {
   return (
     <section className="relative container mx-auto px-4 lg:px-0 pb-40">
       {/* Left Shadow Effect (Visible on MD+ Devices) */}
-      <div className="absolute inset-y-0 left-0 md:w-1/2 bg-gradient-to-r from-primary_bg pointer-events-none hidden md:block"></div>
+      <div className="absolute inset-y-0 left-0 md:w-1/2 bg-gradient-to-r from-primary_bg pointer-events-none hidden md:block z-10"></div>
 
       {/* Right Shadow Effect (Visible on MD+ Devices) */}
-      <div className="absolute inset-y-0 right-0 md:w-1/2 bg-gradient-to-l from-primary_bg pointer-events-none hidden md:block"></div>
+      <div className="absolute inset-y-0 top-0 right-0 md:w-1/2 bg-gradient-to-l from-primary_bg pointer-events-none hidden md:block z-10"></div>
 
       {/* Content */}
       <h2 className="text-white text-center font-semibold text-2xl mt-10">
