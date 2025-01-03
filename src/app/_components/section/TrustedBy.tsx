@@ -5,6 +5,7 @@ import monzo from "../../../../public/home-page-img/monzo.png";
 import morgan from "../../../../public/home-page-img/morgan.png";
 import hereRight from "../../../../public/home-page-img/right-here.png";
 import Image from "next/image";
+import Marquee from "react-fast-marquee";
 
 export default function TrustedBy() {
   return (
@@ -20,24 +21,21 @@ export default function TrustedBy() {
         Trusted By
       </h2>
 
-      {/* Responsive Images */}
-      <div className="flex md:justify-between items-center mt-8 gap-4">
-        <div className="">
-          <Image src={bp} width={100} height={50} alt="bp image" className="w-20 md:w-26" />
+      {/* Marquee for Logos */}
+      <Marquee 
+        speed={80} 
+        pauseOnHover 
+        gradient={false} 
+        className="mt-8"
+      >
+        <div className="flex items-center gap-10 px-6">
+          <Image src={bp} width={100} height={50} alt="bp logo" className="w-20 md:w-26" />
+          <Image src={hsbc} width={100} height={50} alt="hsbc logo" className="w-24 md:w-52" />
+          <Image src={monzo} width={100} height={50} alt="monzo logo" className="w-12 md:w-20" />
+          <Image src={morgan} width={100} height={50} alt="morgan logo" className="w-24 md:w-52" />
+          <Image src={hereRight} width={100} height={50} alt="here right logo" className="w-24 md:w-52" />
         </div>
-        <div className="">
-          <Image src={hsbc} width={100} height={50} alt="hsbc image" className="w-24 md:w-52" />
-        </div>
-        <div className="">
-          <Image src={monzo} width={100} height={50} alt="monzo image" className="w-12 md:w-20" />
-        </div>
-        <div className="">
-          <Image src={morgan} width={100} height={50} alt="morgan image" className="w-24 md:w-52" />
-        </div>
-        <div className="">
-          <Image src={hereRight} width={100} height={50} alt="here right image" className="w-24 md:w-52" />
-        </div>
-      </div>
+      </Marquee>
     </section>
   );
 }

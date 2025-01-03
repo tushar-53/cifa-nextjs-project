@@ -9,7 +9,7 @@ interface CardProps {
   bakcground: string;
   professionOne: string;
   professionTwo: string;
-  professionThree?: string; 
+  professionThree?: string;
 }
 
 export default function Card({
@@ -21,14 +21,14 @@ export default function Card({
   professionThree,
 }: CardProps) {
   return (
-    <div className="w-[380px] h-[550px] border rounded-2xl relative overflow-hidden">
+    <div className="w-[380px] h-[650px] border rounded-2xl relative"> {/* Increased height */}
       {/* Image Container with Shadow */}
-      <div className="relative h-[50%]">
+      <div className="relative h-[50%] rounded-t-2xl overflow-hidden">
         <Image
-          src={image} // Pass the image prop here
-          layout="fill" // Ensures the image fills its container
-          objectFit="cover" // Maintains the aspect ratio and covers the 
+          src={image}
           alt={name}
+          layout="fill"
+          objectFit="cover"
           className="rounded-t-2xl"
         />
         {/* Shadow Overlay */}
@@ -41,7 +41,7 @@ export default function Card({
           <h2 className="text-white font-medium text-xl">{name}</h2>
           <p className="text-secondary_color mt-5 mb-3">{bakcground}</p>
           <div className="flex flex-wrap gap-3">
-            <Button title={professionOne}/>
+            <Button title={professionOne} />
             <Button title={professionTwo} />
             {professionThree && <Button title={professionThree} />}
           </div>
@@ -56,3 +56,4 @@ export default function Card({
     </div>
   );
 }
+

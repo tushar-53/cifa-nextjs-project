@@ -8,11 +8,10 @@ export default function Traning() {
     <section className="lg:container mx-auto text-white py-32 border border-secondary_bg mb-20 rounded-2xl">
       <div className="lg:flex justify-center items-center">
         <div className="lg:w-1/2 px-10 text-center md:text-start">
-          <Button title="Online Exams!" />
-          <h2 className="text-5xl my-6">
+          <h2 className="text-3xl lg:text-5xl my-6">
             Innovative Corporate training solutions.
           </h2>
-          <p className="text-secondary_color text-xl">
+          <p className="text-secondary_color text-lg lg:text-xl">
           Develop the skills that your workforce needs with CIFA’S corporate training packages. CIFA has innovative features and functions that enable corporations to monitor and track their employees continuing professional development progress in real time.
             <br />
             <br />

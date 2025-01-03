@@ -22,10 +22,10 @@ export default function EmployabilityTools() {
 
         <div className="lg:w-1/2 px-10 text-center md:text-start">
           <Button title=" Employability Tools" />
-          <h2 className="text-5xl my-6">
+          <h2 className="text-3xl lg:text-5xl my-6">
           Stand out from the crowd!
           </h2>
-          <p className="text-secondary_color text-xl">
+          <p className="text-secondary_color text-lg lg:text-xl">
           Explore CIFA’s advanced employability tools to enhance your career prospects. Our Digital CV includes a video resume feature, live CPD progress tracking, and social media integration for sharing your profile on LinkedIn and other platforms. With instant interview scheduling and access to tailored employment services, elevate your professional presence and unlock new opportunities with CIFA comprehensive career support.
           </p>
           <Button title="Learn More" className="mt-10" />

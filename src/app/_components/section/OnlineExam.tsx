@@ -9,10 +9,10 @@ export default function OnlineExam() {
       <div className="lg:flex justify-center items-center">
         <div className="lg:w-1/2 px-10 text-center md:text-start">
           <Button title="Online Exams!" />
-          <h2 className="text-5xl my-6">
+          <h2 className="text-3xl lg:text-5xl my-6">
             State of the art examination software to show the highest integrity!
           </h2>
-          <p className="text-secondary_color text-xl">
+          <p className="text-secondary_color text-lg lg:text-xl">
             Flexible exams that can be sat anytime 24/7. CIFA uses state-of-the-art 
             examination software which enables students to sit exams at any time 
             from the comfort of their own home, without any time restrictions.

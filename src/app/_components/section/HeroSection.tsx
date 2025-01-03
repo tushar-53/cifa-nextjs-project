@@ -10,7 +10,7 @@ export default function HeroSection() {
   return (
     <div className="relative">
       {/* Shadow Effect */}
-      <div className="absolute top-0 inset-x-0 w-[550px] mx-auto h-[800px] bg-gradient-to-b from-[#646049] via-transparent to-transparent blur-3xl opacity-90 z-20"></div>
+      <div className="absolute top-0 inset-x-0 w-[250px] md:w-[350px] lg:w-[450px] mx-auto h-[400px] md:h-[600px] lg:h-[800px] bg-gradient-to-b from-[#646049] via-transparent to-transparent blur-3xl opacity-90 z-20"></div>
 
       {/* Navbar Section */}
       <section className="lg:container mx-auto border-b border-b-primary_color">
@@ -54,15 +54,16 @@ export default function HeroSection() {
         />
 
         {/* Content Overlay */}
-        <div className="w-full absolute inset-0 flex flex-col items-center lg:items-start justify-center px-6 md:px-12 lg:px-20 space-y-4 lg:space-y-8">
+        <div className="w-full absolute inset-0 mt-14 lg:mt-0 lg:flex flex-col items-center lg:items-start justify-center px-2 md:px-12 lg:px-20 space-y-4 lg:space-y-8">
           {/* Tagline Button */}
           <div className="text-center lg:text-start">
-            <button className="w-44 px-2 py-1 text-xs sm:text-sm lg:text-base rounded-full border border-primary_color bg-primary_color text-white font-aeonik">
+            {/* <button className="w-44 px-2 py-1 text-xs sm:text-sm lg:text-base rounded-full border border-primary_color bg-primary_color text-white font-aeonik">
               Elevate Your Career
-            </button>
+            </button> */}
+            <Button title='Elevate Your Career'/>
 
             {/* Heading */}
-            <h2 className="text-white font-medium text-4xl md:text-7xl leading-snug my-4">
+            <h2 className="text-white font-medium text-6xl lg:text-7xl leading-snug my-4">
               Transform <br />
               Your{" "}
               <span className="text-[#e2bf7a]">
@@ -72,15 +73,15 @@ export default function HeroSection() {
             </h2>
 
             {/* Subheading */}
-            <p className="md:w-[390px] text-[#b9b4b8] text-sm sm:text-base md:text-lg font-medium font-aeonik leading-relaxed my-10">
+            <p className="lg:w-[390px] text-secondary_color text-sm sm:text-base md:text-lg font-medium font-aeonik leading-relaxed my-10">
               Earn accredited qualifications online with CIFA and access tools
               to boost your career in finance.
             </p>
 
             {/* Buttons */}
-            <div className="md:flex items-center gap-6 mt-7">
+            <div className="md:flex justify-center items-center gap-6 mt-7">
               <Button title="Learn More" />
-              <div className="flex items-center gap-1 my-2 md:my-0">
+              <div className="flex items-center justify-center gap-1 my-4 md:my-0">
                 <PlayIcon className="w-8 text-secondary_color" />
 
                 <button className="uppercase text-white hover:text-primary_color transition ease-in-out duration-300">

@@ -5,12 +5,12 @@ import Image from "next/image";
 
 export default function CIFA() {
   return (
-    <section className="lg:container mx-auto text-white py-20">
+    <section className="lg:container mx-auto text-white py-20 px-2">
       <div className="lg:flex justify-center items-center border border-primary_color rounded-2xl py-28">
         <div className="lg:w-1/2 px-10 text-center md:text-start">
           <Button title="Who is CIFA?" />
-          <h2 className="text-5xl my-6">The Future of Education Starts Here</h2>
-          <p className="text-secondary_color text-xl">
+          <h2 className="text-3xl lg:text-5xl my-6">The Future of Education Starts Here</h2>
+          <p className="text-secondary_color text-lg lg:text-xl">
           Unleash the power of CPD and kick start your career! CIFA’S Continuing Professional Development (CPD) certifications will help you gain a competitive edge over your competition!
             <br />
             <br />
